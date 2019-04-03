@@ -66,4 +66,8 @@ public class Report {
         return "Report [id=" + id + ", sales=" + sales + ", qty=" + qty + ", staffName=" + staffName + "]";
     }
 
+    public String toJson() {
+        return "{ \"id\": "+ this.id + ", \"sales\": " + this.sales + ", \"qty\": " + this.qty
+                + ", \"staffName\": \"" + this.staffName + "\"" + " , \"staffDate\": \"" + this.date + "\"" + " }, ";
+    }
 }

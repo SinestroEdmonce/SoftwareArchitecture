@@ -16,7 +16,7 @@
     <batch:job id="helloWorldJob">
         <batch:step id="step1">
             <batch:tasklet>
-                <batch:chunk reader="cvsFileItemReader" writer="xmlItemWriter" processor="itemProcessor"
+                <batch:chunk reader="cvsFileItemReader" writer="jsonWriter" processor="itemProcessor"
                              commit-interval="10">
                 </batch:chunk>
             </batch:tasklet>
@@ -47,6 +47,10 @@
                 </property>
             </bean>
         </property>
+
+    </bean>
+
+    <bean id="jsonWriter" class="cn.edu.nju.sa2017.pipefilter.MyJsonWriter">
 
     </bean>
 

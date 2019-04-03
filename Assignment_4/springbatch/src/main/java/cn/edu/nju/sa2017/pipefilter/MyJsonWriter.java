@@ -45,10 +45,31 @@ public class MyJsonWriter implements ItemWriter<Report> {
             // Use foreach(*) to do the job, however, there is an extra comma in the end.
             // Actually, in IE6 standard, the format with an extra comma in the array is not valid.
             // However, in order to facilitate the data interchange, such format is supported by almost every following standard.
+//            reportList.forEach((elementUnit)->{
+//                try {
+//                    jsonFileWriter.write(elementUnit.toJson());
+//                    jsonFileWriter.flush();
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+//            });
+
+            // Use foreach(*) to do the job without an extra comma.
+            // Actually, I think using a such verbose method to meet the requirement of some standards is unreasonable.
+            final int listLength = reportList.size();
+            final Increment incVal = new Increment(0);
             reportList.forEach((elementUnit)->{
                 try {
-                    jsonFileWriter.write(elementUnit.toJson());
+                    String jsonUnit = elementUnit.toJson();
+                    if (incVal.value == (listLength-1)){
+                        jsonFileWriter.write(jsonUnit.substring(0, jsonUnit.length()-2));
+                    }
+                    else {
+                        jsonFileWriter.write(jsonUnit);
+                    }
+
                     jsonFileWriter.flush();
+                    incVal.value += 1;
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -59,6 +80,15 @@ public class MyJsonWriter implements ItemWriter<Report> {
             e.printStackTrace();
         }
         jsonFileWriter.close();
+    }
+
+    class Increment {
+        public int value;
+
+        public Increment(int init) {
+            this.value = init;
+        }
+
     }
 
 }

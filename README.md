@@ -21,4 +21,4 @@ This is a repository that is used to store the assignments from the course: ***S
 
 ### Usage
 
-Every assignment has its own ``README.md`` that record the usage. Users can refer to the file in every folder to get to know the guidance for every assignment.
+Every assignment has its own ``README.md`` that records the usage. Users can refer to the file in every folder to get to know the guidance for every assignment.

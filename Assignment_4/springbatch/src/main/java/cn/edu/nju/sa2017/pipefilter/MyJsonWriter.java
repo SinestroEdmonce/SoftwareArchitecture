@@ -27,19 +27,32 @@ public class MyJsonWriter implements ItemWriter<Report> {
             // Write down the head of .json file
             jsonFileWriter.write("{ \"report\": [ ");
 
-            for (int idx=0; idx<reportList.size(); ++idx){
+            // The original method to do the job
+//            for (int idx=0; idx<reportList.size(); ++idx){
+//
+//                // Remove the last ',' in the string
+//                if (idx == (reportList.size()-1)){
+//                    String temp = reportList.get(idx).toJson();
+//                    jsonFileWriter.write(temp.substring(0, temp.length()-2));
+//                    jsonFileWriter.flush();
+//                }
+//                else {
+//                    jsonFileWriter.write(reportList.get(idx).toJson());
+//                    jsonFileWriter.flush();
+//                }
+//            }
 
-                // Remove the last ',' in the string
-                if (idx == (reportList.size()-1)){
-                    String temp = reportList.get(idx).toJson();
-                    jsonFileWriter.write(temp.substring(0, temp.length()-2));
+            // Use foreach(*) to do the job, however, there is an extra comma in the end.
+            // Actually, in IE6 standard, the format with an extra comma in the array is not valid.
+            // However, in order to facilitate the data interchange, such format is supported by almost every following standard.
+            reportList.forEach((elementUnit)->{
+                try {
+                    jsonFileWriter.write(elementUnit.toJson());
                     jsonFileWriter.flush();
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
-                else {
-                    jsonFileWriter.write(reportList.get(idx).toJson());
-                    jsonFileWriter.flush();
-                }
-            }
+            });
 
             jsonFileWriter.write(" ] }\n");
         } catch (IOException e) {
@@ -47,4 +60,5 @@ public class MyJsonWriter implements ItemWriter<Report> {
         }
         jsonFileWriter.close();
     }
+
 }

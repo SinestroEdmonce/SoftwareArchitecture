@@ -63,7 +63,7 @@
     <bean id="reportMarshaller" class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
         <property name="classesToBeBound">
             <list>
-                <value>cn.edu.nju.sa2017.pipefilter.Report</value>
+                <value>njuics.demos.pipefilter.Report</value>
             </list>
         </property>
     </bean>

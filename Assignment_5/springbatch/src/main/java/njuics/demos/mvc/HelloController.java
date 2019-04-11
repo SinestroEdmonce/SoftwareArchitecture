@@ -21,7 +21,7 @@ public class HelloController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String printWelcome(ModelMap model) {
 
-		model.addAttribute("message", "Spring MVC Hello World");
+		model.addAttribute("message", "Spring MVC Demo Hello World");
 		return "hello";
 
 	}
@@ -59,8 +59,7 @@ public class HelloController {
 
 		System.out.println("Job Done");
 		model.setViewName("hello");
-		model.addObject("msg", name + "(csv2xml Job Done)");
-
+		model.addObject("msg", "csv2xml: Job Done!");
 
 		return model;
 
@@ -90,8 +89,7 @@ public class HelloController {
 
 		System.out.println("Job Done");
 		model.setViewName("hello");
-		model.addObject("msg", name+ "(csv2json Job Done)");
-
+		model.addObject("msg", "csv2json: Job Done!");
 
 		return model;
 

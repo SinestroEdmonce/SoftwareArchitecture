@@ -19,6 +19,20 @@ This is a repository that is used to store the assignments from the course: ***S
                 - CODE
             - README.md
 
+- The content in ``Assignment_5``, including ``README.md`` for the assignment, which users can easily refer to. 
+
+        - Assignment_5
+            - springbatch
+                - src
+                    - main
+                    - resources
+                    - webapp
+                - xml/outputs
+                    - RESULT
+                - .xml .iml
+            - OTHERS
+            - README.md
+
 ### Usage
 
 Every assignment has its own ``README.md`` that records the usage. Users can refer to the file in every folder to get to know the guidance for every assignment.

@@ -58,7 +58,7 @@ public class HelloController {
 		}
 
 		System.out.println("Job Done");
-		model.setViewName("hello");
+		model.setViewName("batch");
 		model.addObject("msg", "csv2xml: Job Done!");
 
 		return model;
@@ -88,7 +88,7 @@ public class HelloController {
 		}
 
 		System.out.println("Job Done");
-		model.setViewName("hello");
+		model.setViewName("batch");
 		model.addObject("msg", "csv2json: Job Done!");
 
 		return model;

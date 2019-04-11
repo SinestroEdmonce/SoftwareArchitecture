@@ -13,7 +13,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {
-        "classpath:spring/batch/jobs/job-hello-world.xml",
+        "classpath:spring/batch/jobs/job-hello-world-csv2xml.xml",
         "classpath:spring/batch/config/test-context.xml"})
 public class AppTest {
 

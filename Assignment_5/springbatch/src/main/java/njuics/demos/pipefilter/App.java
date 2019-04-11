@@ -9,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class App {
     public static void main(String[] args) {
 
-        String[] springConfig = { "spring/batch/jobs/job-hello-world.xml" };
+        String[] springConfig = {"spring/batch/jobs/job-hello-world-csv2xml.xml"};
 
         JobLauncher jobLauncher;
         Job job;

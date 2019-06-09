@@ -101,4 +101,43 @@
 
 ## Chapter7
 
-1.
+1. MVC设计模式图例：
+
+    ![img](https://github.com/SinestroEdmonce/SoftwareArchitecture/raw/master/Exam-Review/image/mvc-overview.jpg)
+
+## Chapter8
+
+1. C/S设计模式：
+    - 优点
+        - 资源共享
+        - 集中化管理理
+        - 性能分布
+        - 安全
+    - Fat Client：
+        - 特征：
+            - 应⽤系统在Client端运⾏
+            - Client知道Server上的数据、⽂件等如何组织和存储
+            - 是⼀种C/S模式的传统形式
+            - 一般用户个⼈软件系统
+        - 优点：
+            - 为⽤户端程序的设计和开发提供较⼤的灵活性和便利性
+    - Fat Server：
+        - 特征：
+            - Server通过一组确定的过程(或方法)提供资源的访问，⽽不是提供对资源的直接操作
+            - Client提供GUI界⾯供⽤户进行操作，并通过远程⽅法调用与Server通信，获得服务
+        - 优点：
+            - 应⽤代码集中于Server端，便于部署和管理
+            - 减少⽹络通信开销
+
+2. 可扩展性：
+    - 纵向扩展
+    - 横向扩展
+        - 传输端负载均衡
+            - 基于DNS的负载均衡
+            - TCP/IP负载均衡
+        - 分布式缓存
+        - 一致性哈希
+        - 虚拟结点
+        - 应用端负载均衡
+            - 服务器/客户机
+            - 会话

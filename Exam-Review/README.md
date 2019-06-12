@@ -4,6 +4,8 @@
 
 1. 生命周期模型：软件概念 -> 需求分析 -> 架构设计 -> 详细设计 -> 编码 -> 测试
 
+    ![img](https://github.com/SinestroEdmonce/SoftwareArchitecture/raw/master/Exam-Review/image/life-cycle-model.jpg)
+
 ## Chapter2
 
 1. 体系结构视图分类：
@@ -80,12 +82,16 @@
 
         前两种是被动过滤器，后⾯的是主动过滤器。多主动过滤器需要设置同步和缓冲。
 
+    ![img](https://github.com/SinestroEdmonce/SoftwareArchitecture/raw/master/Exam-Review/image/unix-half-duplex-pipe-fork.jpg)
+
 3. SOAP协议：简单理解：以XML形式表示服务调⽤过程中的消息
     - 二进制消息PlainText消息
     - 平台无关性
 
 4. SpringBatch：
     - 批处理框架
+
+    ![img](https://github.com/SinestroEdmonce/SoftwareArchitecture/raw/master/Exam-Review/image/spring-batch-overview.jpg)
 
 ## Chapter6
 
@@ -141,3 +147,11 @@
         - 应用端负载均衡
             - 服务器/客户机
             - 会话
+
+## Chapter9
+
+1. **HDFS结构及相关模型**
+
+    ![img](https://github.com/SinestroEdmonce/SoftwareArchitecture/raw/master/Exam-Review/image/hdfs-example.jpg)
+
+## Chapter10

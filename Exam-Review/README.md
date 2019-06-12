@@ -155,3 +155,5 @@
     ![img](https://github.com/SinestroEdmonce/SoftwareArchitecture/raw/master/Exam-Review/image/hdfs-example.jpg)
 
 ## Chapter10
+
+1. REST设计模式

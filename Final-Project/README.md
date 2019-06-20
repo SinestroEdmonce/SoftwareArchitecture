@@ -2,7 +2,9 @@
 
 ## 项目地址
 
-为避免仓库过于庞杂，最终的大作业存放在``Github``上的另一个仓库中，项目链接如下：[https://github.com/SinestroEdmonce/Microservices-DFS](https://github.com/SinestroEdmonce/Microservices-DFS)
+为避免仓库过于庞杂，最终的大作业存放在``Github``上的另一个仓库中，项目链接如下：
+
+``Microservices-DFS``: [https://github.com/SinestroEdmonce/Microservices-DFS](https://github.com/SinestroEdmonce/Microservices-DFS)
 
 ## 项目描述：微服务架构的分布式文件系统设计与实现
 

@@ -33,6 +33,14 @@ This is a repository that is used to store the assignments from the course: ***S
             - OTHERS
             - README.md
 
+- The content in ``Exam-Review``
+
+        - README.md
+
+- The content in ``Final-Project``
+
+        - README.md
+
 ### Usage
 
 Every assignment has its own ``README.md`` that records the usage. Users can refer to the file in every folder to get to know the guidance for every assignment.
